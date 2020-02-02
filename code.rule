@@ -1,0 +1,51 @@
+文件目录结构：(必须存在)
+    base\
+        application\
+            core\
+                controllers\
+                models\
+                views\
+            config\
+            template\
+            lib\
+            static\
+                css\
+                images\
+                js\
+        system\
+            core\
+            config\
+            database\
+            router\
+            security\
+            lib\
+                core\
+                function\
+        storage\
+            cache\
+            log\
+        install\
+
+命名规则：
+    类文件        类名.class.php   （类名必须与该文件名（无后缀）一致）
+    控制器类文件   控制器类名Controller.class.php
+    视图类文件      视图类名View.class.php
+    模式类文件      模式类名Model.class.php
+    函数文件       文件名.func.php
+    配置文件       文件名.conf.php
+    库文件         库文件名.lib.php
+
+    目录均采用小写字母
+    命名空间采用目录名（首字母大写）
+    PHP文件名称采用驼峰式命名
+    函数名称使用下划线作为分隔符的命名方式
+    函数局部变量名采用驼峰式命名（变量名首字母小写，其余单词都字母大写）
+    类成员最好使用'_'加变量名
+
+    HTML文件名均采用小写字母
+    database目录下文件防止与系统类名称冲突故均在类名前加 ‘DB’ 以防止冲突
+
+编码规则：
+
+视图数据规则：
+    所有在视图层使用的数据均在 item 数组内，如 item['menu'], item['admin']['name'], ... 

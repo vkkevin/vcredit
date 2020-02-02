@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /system
+Disallow: /application
+Disallow: /install
+Disallow: debug.php
+Disallow: robots.txt
+Disallow: code.rule
+Disallow: .htaccess

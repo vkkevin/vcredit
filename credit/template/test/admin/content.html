@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>主体内容</title>
+        <style>
+            body{
+                font-family: "微软雅黑";
+            }
+
+            .content-body{
+                font-size: 120px;
+                color: #000;
+                position:absolute;
+            }
+        </style>
+        <script type="text/javascript">
+        $(function(){
+        	//自适应屏幕宽度
+        	window.onresize=function(){ location=location };
+
+        	// var main_h = $(window).height();
+        	// $('.hy_list').css('height',main_h-45+'px');
+
+        	// var search_w = $(window).width()-40;
+        	// $('.search').css('width',search_w+'px');
+        	//$('.list_hy').css('width',search_w+'px');
+        });
+        </script>
+    </head>
+    <body onload="Resize();">
+        <span class="content-body">完满学分认定</span>
+    </body>
+</html>
